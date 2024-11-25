@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 169px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  p {
+    font-size: 25px;
+  }
+  p#result {
+    font-size: 25px;
+  }
+  
+  #choices {
+    margin: 20px 0;
+  }
+  
+  .choice {
+    font-size: 50px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #rock {
+    background-color: red;
+    color: white;
+  }
+  
+  #paper {
+    background-color: blue;
+    color: white;
+  }
+  
+  #scissors {
+    background-color: green;
+    color: white;
+  }
+  
+  .choice:hover {
+    opacity: 0.8;
+  }
+  
+  #result {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+ 
+  #computer-score {
+    font-weight: bold;
+    color: #1a2096;
+  }
+  #player-score{
+    font-weight: bold;
+    color: #d01b70;
+
+  }

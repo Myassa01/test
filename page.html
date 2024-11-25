@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <div class="password-box">
+            <input type="text" id="password" placeholder="Create Password" readonly>
+            <button class="copy-btn" onclick="copyPassword()">📋</button>
+        </div>
+        <button class="generate-btn" onclick="generatePassword()">Generate</button>
+    </div>
+    <script>
+        function generatePassword() {
+            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+            let password = "";
+            for (let i = 0; i < 14; i++) {
+                password += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById('password').value = password;
+        }
+
+        function copyPassword() {
+            const passwordField = document.getElementById('password');
+            passwordField.select();
+            document.execCommand('copy');
+           
+        }
+    </script>
+</body>
+</html>
